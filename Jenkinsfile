@@ -1,16 +1,4 @@
+// Jenkinsfile
+//@Library('evenOdd') _
 
-
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                sh 'echo "Hello Dinesh Kumar"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah		    
-                '''
-            }
-        }
-    }
-}
+evenOdd(currentBuild.getNumber())
