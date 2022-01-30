@@ -1,4 +1,4 @@
 // Jenkinsfile
-//@Library('evenOdd') _
+//@Library('testing_repo') _
 
 evenOdd(currentBuild.getNumber())
